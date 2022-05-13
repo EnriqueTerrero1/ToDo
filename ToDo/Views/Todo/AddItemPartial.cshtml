@@ -1,0 +1,22 @@
+﻿@model ToDoItem
+@{
+    ViewData["Title"] = "AddItemPartial";
+}
+
+<form asp-action="AddItem" method="POST">
+    <tr>
+        
+   <td> <label asp-for="title">Add a new item:</label></td>
+    <td><input asp-for="title"> </td>
+    </tr>
+    <tr>
+        
+   <td><label asp-for="dueAt">dueAt</label></td>
+ <td> <input asp-for="dueAt" type="date"> </td>
+    </tr>
+   
+<button type="submit" class="btn btn-primary">Add</button>
+
+     
+</form>
+
